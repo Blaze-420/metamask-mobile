@@ -9,10 +9,7 @@ import {
   type ConfirmationRedesignRemoteFlags,
   selectConfirmationRedesignFlags,
 } from '../../../../selectors/featureFlagController';
-import {
-  isExternalHardwareAccount,
-  isHardwareAccount,
-} from '../../../../util/address';
+import { isHardwareAccount } from '../../../../util/address';
 import { isStakingConfirmation } from '../utils/confirm';
 import useApprovalRequest from './useApprovalRequest';
 import { useTransactionMetadataRequest } from './useTransactionMetadataRequest';
@@ -40,7 +37,7 @@ function isRedesignedSignature({
     confirmationRedesignFlags?.signatures &&
     approvalRequestType &&
     REDESIGNED_SIGNATURE_TYPES.includes(approvalRequestType as ApprovalType) &&
-    !isExternalHardwareAccount(fromAddress)
+    !isHardwareAccount(fromAddress)
   );
 }
 
