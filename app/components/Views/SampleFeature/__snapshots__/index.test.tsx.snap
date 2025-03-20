@@ -42,7 +42,7 @@ exports[`SampleFeature render matches snapshot 1`] = `
         }
       }
     >
-      This is a sample feature as a template for developers.
+      This is a screen demonstrating how to build a sample feature end-to-end in MetaMask.
     </Text>
   </View>
 </RCTScrollView>
