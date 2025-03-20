@@ -1,0 +1,21 @@
+import { StyleSheet } from 'react-native';
+import { fontStyles } from '../../../styles/common';
+import { Colors } from '../../../util/theme/models';
+
+const createStyles = (colors: Colors) =>
+  StyleSheet.create({
+    wrapper: {
+      backgroundColor: colors.background.default,
+      flex: 1,
+      padding: 24,
+      paddingBottom: 48,
+    },
+    heading: {
+      marginTop: 16,
+    },
+    desc: {
+      marginTop: 8,
+    },
+  });
+
+export default createStyles;
