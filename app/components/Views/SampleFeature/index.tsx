@@ -10,6 +10,7 @@ import {SampleNetworkDisplay} from './SampleNetworkDisplay/SampleNetworkDisplay'
 import {useSelector} from 'react-redux';
 import {selectNetworkImageSource, selectNetworkName} from '../../../selectors/networkInfos';
 import {selectChainId, selectNetworkConfigurations} from '../../../selectors/networkController';
+import {SamplePetnamesForm} from './SamplePetnamesForm/SamplePetnamesForm';
 
 
 /**
@@ -43,11 +44,12 @@ const SampleFeature = () => {
             >
                 {strings('sample_feature.description')}
             </Text>
-            <SampleCounterPane/>
             <SampleNetworkDisplay
                 name={networkName}
                 imageSource={networkImageSource}
             />
+            <SampleCounterPane/>
+            <SamplePetnamesForm chainId={chainId}/>
         </ScrollView>
     );
 };

@@ -6,6 +6,8 @@ const styleSheet = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         gap: 8,
+        padding: 16,
+        justifyContent: 'center',
     },
     text: {
         // Add any text styling here if needed

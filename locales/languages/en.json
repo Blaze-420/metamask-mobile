@@ -3816,6 +3816,9 @@
       "title": "Counter",
       "value": "Value: {{value}}",
       "increment": "Increment Redux Counter"
+    },
+    "petnames": {
+      "list_count_text": "Pet Names on this network"
     }
   }
 }
