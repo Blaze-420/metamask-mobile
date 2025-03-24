@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SampleCounterPane render matches snapshot 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "white",
+      "borderRadius": 8,
+      "elevation": 5,
+      "maxWidth": 500,
+      "padding": 16,
+      "shadowColor": "#000",
+      "shadowOffset": {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 0.25,
+      "shadowRadius": 3.84,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "column",
+        "gap": 16,
+      }
+    }
+  >
+    <Text
+      accessibilityRole="text"
+      style={
+        {
+          "color": "#141618",
+          "fontFamily": "EuclidCircularB-Bold",
+          "fontSize": 16,
+          "fontWeight": "700",
+          "letterSpacing": 0,
+          "lineHeight": 24,
+        }
+      }
+      testID="sample-counter-pane-title"
+    >
+      Counter
+    </Text>
+    <Text
+      accessibilityRole="text"
+      style={
+        {
+          "color": "#141618",
+          "fontFamily": "EuclidCircularB-Regular",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "letterSpacing": 0,
+          "lineHeight": 22,
+        }
+      }
+      testID="sample-counter-pane-value"
+    >
+      Value: 42
+    </Text>
+    <TouchableOpacity
+      onPress={[Function]}
+      style={
+        {
+          "backgroundColor": "#037DD6",
+          "borderRadius": 6,
+          "padding": 12,
+          "width": "100%",
+        }
+      }
+      testID="sample-counter-pane-increment-button"
+    >
+      <Text
+        accessibilityRole="text"
+        style={
+          {
+            "color": "white",
+            "fontFamily": "EuclidCircularB-Regular",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+            "lineHeight": 22,
+            "textAlign": "center",
+          }
+        }
+      >
+        Increment Redux Counter
+      </Text>
+    </TouchableOpacity>
+  </View>
+</View>
+`;

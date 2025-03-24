@@ -5,6 +5,7 @@ import { strings } from '../../../../locales/i18n';
 import { useTheme } from '../../../util/theme';
 import createStyles from './SampleFeature.styles';
 import Text, {TextColor, TextVariant} from '../../../component-library/components/Texts/Text';
+import {SampleCounterPane} from './SampleCounterPane/SampleCounterPane';
 
 
 /**
@@ -32,6 +33,7 @@ const SampleFeature = () => {
       >
         {strings('sample_feature.description')}
       </Text>
+      <SampleCounterPane />
     </ScrollView>
   );
 };
