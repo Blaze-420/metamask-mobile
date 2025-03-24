@@ -1,6 +1,7 @@
 import React from 'react';
 import renderWithProvider from '../../../util/test/renderWithProvider';
 import SampleFeature from './';
+import initialRootState from '../../../util/test/initial-root-state';
 
 jest.mock('react-native/Libraries/Linking/Linking', () => ({
     addEventListener: jest.fn(() => ({
@@ -10,7 +11,8 @@ jest.mock('react-native/Libraries/Linking/Linking', () => ({
 
 describe('SampleFeature', () => {
     it('render matches snapshot', () => {
-        const {toJSON} = renderWithProvider(<SampleFeature/>);
+        const {toJSON} = renderWithProvider(<SampleFeature/>,
+            { state: initialRootState });
         expect(toJSON()).toMatchSnapshot();
     });
 });

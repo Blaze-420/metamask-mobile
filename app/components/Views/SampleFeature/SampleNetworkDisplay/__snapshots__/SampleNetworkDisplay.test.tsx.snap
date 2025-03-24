@@ -15,7 +15,7 @@ exports[`SampleNetworkDisplay render matches snapshot 1`] = `
       {
         "alignItems": "center",
         "backgroundColor": "#ffffff",
-        "borderRadius": 16,
+        "borderRadius": 8,
         "height": 32,
         "justifyContent": "center",
         "overflow": "hidden",

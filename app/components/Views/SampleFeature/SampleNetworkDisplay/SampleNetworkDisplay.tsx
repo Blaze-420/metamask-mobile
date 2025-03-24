@@ -9,10 +9,6 @@ interface SampleNetworkDisplayProps {
 }
 
 export function SampleNetworkDisplay({ name, imageSource }: SampleNetworkDisplayProps) {
-
-    console.log('name', name);
-    console.log('imageSource', imageSource);
-
     return (
       <View style={styles.container}>
         <AvatarNetwork name={name} imageSource={imageSource} />
