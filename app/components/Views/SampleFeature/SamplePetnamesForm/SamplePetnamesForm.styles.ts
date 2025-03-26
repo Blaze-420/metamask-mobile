@@ -32,6 +32,16 @@ const styleSheet = (params: {
             flexDirection: 'row',
             alignSelf: 'center',
         },
+        formContainer: {
+            marginTop: 24,
+            paddingBottom: 24,
+        },
+        inputContainer: {
+            marginBottom: 16,
+        },
+        buttonContainer: {
+            marginTop: 8,
+        },
     });
 };
 
