@@ -42,6 +42,16 @@ const styleSheet = (params: {
         buttonContainer: {
             marginTop: 8,
         },
+        PetNameListItem: {
+            flexDirection: 'row',
+            alignItems: 'center',
+            width: '100%',
+            padding: 8,
+        },
+        textStack: {
+            marginLeft: 12,
+            flex: 1,
+        },
     });
 };
 

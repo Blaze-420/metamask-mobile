@@ -10,11 +10,11 @@ import {SampleNetworkDisplay} from './SampleNetworkDisplay/SampleNetworkDisplay'
 import {useSelector} from 'react-redux';
 import {selectNetworkImageSource, selectNetworkName} from '../../../selectors/networkInfos';
 import {selectChainId, selectNetworkConfigurations} from '../../../selectors/networkController';
-import {SamplePetnamesForm} from './SamplePetnamesForm/SamplePetnamesForm';
-
+import {SamplePetNames} from './SamplePetNames';
+import {Hex} from '@metamask/utils';
 
 /**
- * Main view for app Experimental Settings
+ * Main view for app Sample Feature
  */
 const SampleFeature = () => {
 
@@ -49,7 +49,7 @@ const SampleFeature = () => {
                 imageSource={networkImageSource}
             />
             <SampleCounterPane/>
-            <SamplePetnamesForm chainId={chainId}/>
+            <SamplePetNames chainId={chainId}/>
         </ScrollView>
     );
 };
