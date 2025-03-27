@@ -11,10 +11,11 @@ import {useSelector} from 'react-redux';
 import {selectNetworkImageSource, selectNetworkName} from '../../../selectors/networkInfos';
 import {selectChainId, selectNetworkConfigurations} from '../../../selectors/networkController';
 import {SamplePetNames} from './SamplePetNames';
-import {Hex} from '@metamask/utils';
 
 /**
  * Main view for app Sample Feature
+ *
+ * @sampleFeature do not use in production code
  */
 const SampleFeature = () => {
 

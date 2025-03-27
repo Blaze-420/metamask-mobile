@@ -8,11 +8,21 @@ import { renderShortAddress } from '../../../../util/address';
 import { useStyles } from '../../../../component-library/hooks';
 import styleSheet from './index.styles';
 
+/**
+ * Sample interface for PetNamesList component props
+ *
+ * @sampleFeature do not use in production code
+ */
 interface PetNamesListProps {
   addressBook: AddressBookEntry[];
   onAccountPress: (params: { address: string; name: string }) => void;
 }
 
+/**
+ * Sample PetNamesList component
+ *
+ * @sampleFeature do not use in production code
+ */
 export function PetNamesList({ addressBook, onAccountPress }: PetNamesListProps) {
   const { styles } = useStyles(styleSheet, {});
 

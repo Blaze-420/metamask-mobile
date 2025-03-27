@@ -1009,7 +1009,9 @@ const events = {
   ),
   TOKEN_DETAILS_OPENED: generateOpt(EVENT_NAME.TOKEN_LIST_ITEM_PRESSED),
 
-  // Sample feature
+  /**
+   * @sampleFeature do not use in production code
+   */
   SETTINGS_SAMPLE_FEATURE: generateOpt(EVENT_NAME.SETTINGS_SAMPLE_FEATURE),
 };
 

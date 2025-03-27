@@ -50,6 +50,11 @@ function NavigateToSampleFeature() {
     );
 }
 
+/**
+ * Sample SampleFeature dev options link
+ *
+ * @sampleFeature do not use in production code
+ */
 export default function SampleFeature() {
   const theme = useTheme();
   const { styles } = useStyles(styleSheet, { theme });

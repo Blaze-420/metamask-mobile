@@ -5,6 +5,11 @@ import styles from './SampleCounterPane.styles';
 import useSampleCounter from '../../../hooks/SampleFeature/useSampleCounter/useSampleCounter';
 import {strings} from '../../../../../locales/i18n';
 
+/**
+ * Sample SampleCounterPane component
+ *
+ * @sampleFeature do not use in production code
+ */
 export function SampleCounterPane() {
 
     const counter = useSampleCounter();

@@ -11,12 +11,22 @@ import Engine from '../../../../core/Engine';
 import {Hex} from '@metamask/utils';
 import {SupportedCaipChainId} from '@metamask/multichain-network-controller';
 
+/**
+ * Sample interface for PetNamesForm component props
+ *
+ * @sampleFeature do not use in production code
+ */
 interface PetNamesFormContentProps {
     chainId:  SupportedCaipChainId | Hex;
     initialAddress: string;
     initialName: string;
 }
 
+/**
+ * Sample PetNamesForm component
+ *
+ * @sampleFeature do not use in production code
+ */
 export function PetNamesForm({chainId, initialAddress, initialName}: PetNamesFormContentProps) {
 
     const [address, setAddress] = useState(initialAddress);

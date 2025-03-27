@@ -12,10 +12,20 @@ import {PetNamesForm} from './PetNamesForm';
 import {Hex} from '@metamask/utils';
 import {SupportedCaipChainId} from '@metamask/multichain-network-controller';
 
+/**
+ * Sample interface for PetNames component props
+ *
+ * @sampleFeature do not use in production code
+ */
 interface SamplePetNamesFormProps {
     chainId: SupportedCaipChainId | Hex;
 }
 
+/**
+ * Sample PetNames component
+ *
+ * @sampleFeature do not use in production code
+ */
 export function SamplePetNames({chainId}: SamplePetNamesFormProps) {
     const {styles} = useStyles(styleSheet, {});
 
