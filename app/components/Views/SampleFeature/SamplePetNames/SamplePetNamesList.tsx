@@ -1,30 +1,32 @@
 import React from 'react';
 import { View, TouchableOpacity } from 'react-native';
 import Text, { TextVariant } from '../../../../component-library/components/Texts/Text';
-import { AddressBookEntry } from '@metamask/address-book-controller';
 import ListItem from '../../../../component-library/components/List/ListItem';
 import Avatar, { AvatarSize, AvatarVariant } from '../../../../component-library/components/Avatars/Avatar';
 import { renderShortAddress } from '../../../../util/address';
 import { useStyles } from '../../../../component-library/hooks';
-import styleSheet from './index.styles';
-
-/**
- * Sample interface for PetNamesList component props
- *
- * @sampleFeature do not use in production code
- */
-interface PetNamesListProps {
-  addressBook: AddressBookEntry[];
-  onAccountPress: (params: { address: string; name: string }) => void;
-}
+import styleSheet from './SamplePetNames.styles';
+import {useSelector} from 'react-redux';
+import {RootState} from '../../../../reducers';
+import {selectAddressBookByChain} from '../../../../selectors/addressBookController';
+import {Hex} from '@metamask/utils';
+import {SamplePetNamesListProps} from './SamplePetNamesList.types';
 
 /**
  * Sample PetNamesList component
  *
  * @sampleFeature do not use in production code
  */
-export function PetNamesList({ addressBook, onAccountPress }: PetNamesListProps) {
+export function SamplePetNamesList({ chainId, onAccountPress }: SamplePetNamesListProps) {
   const { styles } = useStyles(styleSheet, {});
+
+
+  const addressBook = useSelector((state: RootState) =>
+      selectAddressBookByChain(
+          state,
+          chainId as Hex,
+      ),
+  );
 
   return (
     <View>

@@ -4,30 +4,19 @@ import Label from '../../../../component-library/components/Form/Label';
 import TextField from '../../../../component-library/components/Form/TextField';
 import Button, {ButtonVariants} from '../../../../component-library/components/Buttons/Button';
 import {useStyles} from '../../../../component-library/hooks';
-import styleSheet from './index.styles';
+import styleSheet from './SamplePetNames.styles';
 import {strings} from '../../../../../locales/i18n';
 import {toChecksumAddress} from 'ethereumjs-util';
 import Engine from '../../../../core/Engine';
 import {Hex} from '@metamask/utils';
-import {SupportedCaipChainId} from '@metamask/multichain-network-controller';
-
-/**
- * Sample interface for PetNamesForm component props
- *
- * @sampleFeature do not use in production code
- */
-interface PetNamesFormContentProps {
-    chainId:  SupportedCaipChainId | Hex;
-    initialAddress: string;
-    initialName: string;
-}
+import {SamplePetNamesFormContentProps} from './SamplePetNamesForm.types';
 
 /**
  * Sample PetNamesForm component
  *
  * @sampleFeature do not use in production code
  */
-export function PetNamesForm({chainId, initialAddress, initialName}: PetNamesFormContentProps) {
+export function SamplePetNamesForm({chainId, initialAddress, initialName}: SamplePetNamesFormContentProps) {
 
     const [address, setAddress] = useState(initialAddress);
     const [name, setName] = useState(initialName);

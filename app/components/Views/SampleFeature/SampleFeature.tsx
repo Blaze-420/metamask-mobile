@@ -10,7 +10,7 @@ import {SampleNetworkDisplay} from './SampleNetworkDisplay/SampleNetworkDisplay'
 import {useSelector} from 'react-redux';
 import {selectNetworkImageSource, selectNetworkName} from '../../../selectors/networkInfos';
 import {selectChainId, selectNetworkConfigurations} from '../../../selectors/networkController';
-import {SamplePetNames} from './SamplePetNames';
+import {SamplePetNames} from './SamplePetNames/SamplePetNames';
 
 /**
  * Main view for app Sample Feature

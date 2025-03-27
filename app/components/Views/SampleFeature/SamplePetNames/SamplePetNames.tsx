@@ -2,13 +2,10 @@ import React, {useState} from 'react';
 import {KeyboardAvoidingView, Platform, SafeAreaView, View} from 'react-native';
 import Text, {TextVariant} from '../../../../component-library/components/Texts/Text';
 import {useStyles} from '../../../../component-library/hooks';
-import styleSheet from './index.styles';
+import styleSheet from './SamplePetNames.styles';
 import {strings} from '../../../../../locales/i18n';
-import {useSelector} from 'react-redux';
-import {selectAddressBookByChain} from '../../../../selectors/addressBookController';
-import {RootState} from '../../../../reducers';
-import {PetNamesList} from './PetNamesList';
-import {PetNamesForm} from './PetNamesForm';
+import {SamplePetNamesList} from './SamplePetNamesList';
+import {SamplePetNamesForm} from './SamplePetNamesForm';
 import {Hex} from '@metamask/utils';
 import {SupportedCaipChainId} from '@metamask/multichain-network-controller';
 
@@ -32,13 +29,6 @@ export function SamplePetNames({chainId}: SamplePetNamesFormProps) {
     const [selectedAddress, setSelectedAddress] = useState('');
     const [selectedName, setSelectedName] = useState('');
 
-    const addressBook = useSelector((state: RootState) =>
-        selectAddressBookByChain(
-            state,
-            chainId as Hex,
-        ),
-    );
-
     const onAccountPress = (params: { address: string; name: string }) => {
         setSelectedAddress(params.address);
         setSelectedName(params.name);
@@ -52,11 +42,13 @@ export function SamplePetNames({chainId}: SamplePetNamesFormProps) {
             >
                 <View style={styles.card}>
                     <Text variant={TextVariant.HeadingSM}>{strings('sample_feature.pet_name.list_count_text')}</Text>
-                    <PetNamesList addressBook={addressBook} onAccountPress={onAccountPress}/>
-                    <PetNamesForm chainId={chainId} initialAddress={selectedAddress} initialName={selectedName}/>
+                    <SamplePetNamesList chainId={chainId} onAccountPress={onAccountPress}/>
+                    <SamplePetNamesForm chainId={chainId} initialAddress={selectedAddress} initialName={selectedName}/>
                 </View>
             </KeyboardAvoidingView>
         </SafeAreaView>
     );
 }
 
+
+// useReducer
