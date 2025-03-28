@@ -5,7 +5,6 @@ import Text, {
   TextColor,
 } from '../../../../component-library/components/Texts/Text';
 import { useStyles } from '../../../../component-library/hooks';
-import styleSheet from './DeveloperOptions.styles';
 import {strings} from '../../../../../locales/i18n';
 import Button, {
     ButtonSize,
@@ -13,8 +12,9 @@ import Button, {
     ButtonWidthTypes
 } from '../../../../component-library/components/Buttons/Button';
 import {MetaMetricsEvents} from '../../../../core/Analytics';
-import {useMetrics} from '../../../hooks/useMetrics';
 import {useNavigation} from '@react-navigation/native';
+import styleSheet from './SampleFeatureDevSettingsEntryPoint.styles';
+import {useMetrics} from '../../../../components/hooks/useMetrics';
 
 function NavigateToSampleFeature() {
     const theme = useTheme();
@@ -55,7 +55,7 @@ function NavigateToSampleFeature() {
  *
  * @sampleFeature do not use in production code
  */
-export default function SampleFeature() {
+export default function SampleFeatureDevSettingsEntryPoint() {
   const theme = useTheme();
   const { styles } = useStyles(styleSheet, { theme });
 

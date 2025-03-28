@@ -9,7 +9,8 @@ import { useParams } from '../../../../util/navigation/navUtils';
 import { useStyles } from '../../../../component-library/hooks';
 import styleSheet from './DeveloperOptions.styles';
 import SentryTest from './SentryTest';
-import SampleFeature from './SampleFeature';
+import SampleFeatureDevSettingsEntryPoint
+    from '../../../../SampleFeature/components/views/SampleFeatureDevSettingsEntryPoint/SampleFeatureDevSettingsEntryPoint';
 
 const DeveloperOptions = () => {
   const navigation = useNavigation();
@@ -39,7 +40,7 @@ const DeveloperOptions = () => {
   return (
     <ScrollView style={styles.wrapper}>
       <SentryTest />
-      <SampleFeature />
+      <SampleFeatureDevSettingsEntryPoint />
     </ScrollView>
   );
 };
