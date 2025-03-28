@@ -26,6 +26,7 @@ interface SamplePetNamesFormProps {
 export function SamplePetNames({chainId}: SamplePetNamesFormProps) {
     const {styles} = useStyles(styleSheet, {});
 
+    // TODO - maybe use a reducer here instead of useState
     const [selectedAddress, setSelectedAddress] = useState('');
     const [selectedName, setSelectedName] = useState('');
 

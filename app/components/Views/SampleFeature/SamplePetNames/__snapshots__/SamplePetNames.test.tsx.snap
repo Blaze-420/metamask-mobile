@@ -48,7 +48,7 @@ exports[`SamplePetNamesForm render matches snapshot 1`] = `
         accessibilityRole="text"
         style={
           {
-            "color": "#141618",
+            "color": "#121314",
             "fontFamily": "EuclidCircularB-Bold",
             "fontSize": 16,
             "fontWeight": "700",
@@ -79,7 +79,7 @@ exports[`SamplePetNamesForm render matches snapshot 1`] = `
             accessibilityRole="text"
             style={
               {
-                "color": "#141618",
+                "color": "#121314",
                 "fontFamily": "EuclidCircularB-Regular",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -96,7 +96,7 @@ exports[`SamplePetNamesForm render matches snapshot 1`] = `
               {
                 "alignItems": "center",
                 "backgroundColor": "#ffffff",
-                "borderColor": "#848c96",
+                "borderColor": "#b7bbc8",
                 "borderRadius": 8,
                 "borderWidth": 1,
                 "flexDirection": "row",
@@ -127,7 +127,7 @@ exports[`SamplePetNamesForm render matches snapshot 1`] = `
                     "backgroundColor": "#ffffff",
                     "borderColor": "transparent",
                     "borderWidth": 1,
-                    "color": "#141618",
+                    "color": "#121314",
                     "fontFamily": "Euclid Circular B",
                     "fontSize": 14,
                     "fontWeight": "400",
@@ -154,7 +154,7 @@ exports[`SamplePetNamesForm render matches snapshot 1`] = `
             accessibilityRole="text"
             style={
               {
-                "color": "#141618",
+                "color": "#121314",
                 "fontFamily": "EuclidCircularB-Regular",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -171,7 +171,7 @@ exports[`SamplePetNamesForm render matches snapshot 1`] = `
               {
                 "alignItems": "center",
                 "backgroundColor": "#ffffff",
-                "borderColor": "#848c96",
+                "borderColor": "#b7bbc8",
                 "borderRadius": 8,
                 "borderWidth": 1,
                 "flexDirection": "row",
@@ -201,7 +201,7 @@ exports[`SamplePetNamesForm render matches snapshot 1`] = `
                     "backgroundColor": "#ffffff",
                     "borderColor": "transparent",
                     "borderWidth": 1,
-                    "color": "#141618",
+                    "color": "#121314",
                     "fontFamily": "Euclid Circular B",
                     "fontSize": 14,
                     "fontWeight": "400",
@@ -229,7 +229,7 @@ exports[`SamplePetNamesForm render matches snapshot 1`] = `
             {
               "alignItems": "center",
               "alignSelf": "flex-start",
-              "backgroundColor": "#0376c9",
+              "backgroundColor": "#4459ff",
               "borderRadius": 20,
               "flexDirection": "row",
               "height": 40,

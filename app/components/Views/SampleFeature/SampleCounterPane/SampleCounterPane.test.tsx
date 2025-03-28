@@ -34,7 +34,7 @@ describe('SampleCounterPane', () => {
         expect(valueElement.props.children).toBe('Value: 42');
     });
 
-    it('calls increment when button is pressed', async () => {
+    it('increments counter value', async () => {
         const { getByTestId } = renderWithProvider(<SampleCounterPane />);
 
         fireEvent.press(getByTestId('sample-counter-pane-increment-button'));
