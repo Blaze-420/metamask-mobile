@@ -9,15 +9,13 @@ jest.mock('react-native/Libraries/Linking/Linking', () => ({
     addEventListener: jest.fn(() => ({remove: jest.fn()})),
 }));
 
-jest.mock('../../../../core/Engine', () => {
-    return {
+jest.mock('../../../../core/Engine', () => ({
         context: {
             AddressBookController: {
                 set: jest.fn()
             },
         },
-    };
-});
+    }));
 
 describe('SamplePetNamesForm', () => {
     beforeEach(() => {
