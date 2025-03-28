@@ -25,21 +25,14 @@ exports[`SamplePetNamesForm render matches snapshot 1`] = `
       ]
     }
   >
-    <View
+    <TouchableOpacity
       style={
         {
-          "backgroundColor": "white",
-          "borderRadius": 8,
-          "elevation": 5,
-          "maxWidth": 500,
+          "backgroundColor": "#ffffff",
+          "borderColor": "#b7bbc8",
+          "borderRadius": 4,
+          "borderWidth": 1,
           "padding": 16,
-          "shadowColor": "#000",
-          "shadowOffset": {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 0.25,
-          "shadowRadius": 3.84,
           "width": "100%",
         }
       }
@@ -235,6 +228,7 @@ exports[`SamplePetNamesForm render matches snapshot 1`] = `
               "height": 40,
               "justifyContent": "center",
               "paddingHorizontal": 16,
+              "width": "100%",
             }
           }
           testID="add-pet-name-button"
@@ -256,7 +250,7 @@ exports[`SamplePetNamesForm render matches snapshot 1`] = `
           </Text>
         </TouchableOpacity>
       </View>
-    </View>
+    </TouchableOpacity>
   </View>
 </RCTSafeAreaView>
 `;

@@ -176,6 +176,7 @@ exports[`SamplePetNamesForm render matches snapshot 1`] = `
         "height": 40,
         "justifyContent": "center",
         "paddingHorizontal": 16,
+        "width": "100%",
       }
     }
     testID="add-pet-name-button"

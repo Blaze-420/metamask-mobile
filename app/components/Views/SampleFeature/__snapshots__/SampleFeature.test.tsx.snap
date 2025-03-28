@@ -2,14 +2,53 @@
 
 exports[`SampleFeature render matches snapshot 1`] = `
 <RCTScrollView
-  style={
+  automaticallyAdjustContentInsets={false}
+  contentInset={
     {
-      "backgroundColor": "#ffffff",
-      "flex": 1,
-      "padding": 24,
-      "paddingBottom": 48,
+      "bottom": 0,
     }
   }
+  enableAutomaticScroll={true}
+  enableOnAndroid={false}
+  enableResetScrollToCoords={true}
+  extraHeight={75}
+  extraScrollHeight={0}
+  getScrollResponder={[Function]}
+  handleOnScroll={[Function]}
+  keyboardDismissMode="interactive"
+  keyboardOpeningTime={250}
+  keyboardShouldPersistTaps="always"
+  keyboardSpace={0}
+  onScroll={[Function]}
+  resetKeyboardSpace={[Function]}
+  resetScrollToCoords={
+    {
+      "x": 0,
+      "y": 0,
+    }
+  }
+  scrollEventThrottle={1}
+  scrollForExtraHeightOnAndroid={[Function]}
+  scrollIntoView={[Function]}
+  scrollToEnd={[Function]}
+  scrollToFocusedInput={[Function]}
+  scrollToPosition={[Function]}
+  showsVerticalScrollIndicator={true}
+  style={
+    [
+      {
+        "flex": 1,
+      },
+      {
+        "backgroundColor": "#ffffff",
+        "flex": 1,
+        "padding": 24,
+        "paddingBottom": 48,
+      },
+    ]
+  }
+  update={[Function]}
+  viewIsInsideTabBar={false}
 >
   <View>
     <Text
@@ -52,6 +91,7 @@ exports[`SampleFeature render matches snapshot 1`] = `
           "gap": 8,
           "justifyContent": "center",
           "padding": 16,
+          "width": "100%",
         }
       }
     >
@@ -87,97 +127,89 @@ exports[`SampleFeature render matches snapshot 1`] = `
         Ethereum Mainnet
       </Text>
     </View>
-    <View
+    <TouchableOpacity
       style={
         {
-          "backgroundColor": "white",
-          "borderRadius": 8,
-          "elevation": 5,
-          "maxWidth": 500,
+          "backgroundColor": "#ffffff",
+          "borderColor": "#b7bbc8",
+          "borderRadius": 4,
+          "borderWidth": 1,
           "padding": 16,
-          "shadowColor": "#000",
-          "shadowOffset": {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 0.25,
-          "shadowRadius": 3.84,
           "width": "100%",
         }
       }
     >
-      <View
+      <Text
+        accessibilityRole="text"
+        style={
+          {
+            "color": "#121314",
+            "fontFamily": "EuclidCircularB-Bold",
+            "fontSize": 16,
+            "fontWeight": "700",
+            "letterSpacing": 0,
+            "lineHeight": 24,
+          }
+        }
+        testID="sample-counter-pane-title"
+      >
+        Counter
+      </Text>
+      <Text
+        accessibilityRole="text"
+        style={
+          {
+            "color": "#121314",
+            "fontFamily": "EuclidCircularB-Regular",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "letterSpacing": 0,
+            "lineHeight": 22,
+          }
+        }
+        testID="sample-counter-pane-value"
+      >
+        Value: 0
+      </Text>
+      <TouchableOpacity
+        accessibilityRole="button"
+        accessible={true}
+        activeOpacity={1}
+        onPress={[Function]}
+        onPressIn={[Function]}
+        onPressOut={[Function]}
         style={
           {
             "alignItems": "center",
-            "flexDirection": "column",
-            "gap": 16,
+            "alignSelf": "flex-start",
+            "backgroundColor": "#4459ff",
+            "borderRadius": 20,
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "center",
+            "paddingHorizontal": 16,
+            "width": "100%",
           }
         }
+        testID="sample-counter-pane-increment-button"
       >
         <Text
           accessibilityRole="text"
           style={
             {
-              "color": "#121314",
-              "fontFamily": "EuclidCircularB-Bold",
-              "fontSize": 16,
-              "fontWeight": "700",
-              "letterSpacing": 0,
-              "lineHeight": 24,
-            }
-          }
-          testID="sample-counter-pane-title"
-        >
-          Counter
-        </Text>
-        <Text
-          accessibilityRole="text"
-          style={
-            {
-              "color": "#121314",
-              "fontFamily": "EuclidCircularB-Regular",
+              "color": "#ffffff",
+              "fontFamily": "EuclidCircularB-Medium",
               "fontSize": 14,
-              "fontWeight": "400",
+              "fontWeight": "500",
               "letterSpacing": 0,
               "lineHeight": 22,
             }
           }
-          testID="sample-counter-pane-value"
         >
-          Value: 0
+          Increment Redux Counter
         </Text>
-        <TouchableOpacity
-          onPress={[Function]}
-          style={
-            {
-              "backgroundColor": "#037DD6",
-              "borderRadius": 6,
-              "padding": 12,
-              "width": "100%",
-            }
-          }
-          testID="sample-counter-pane-increment-button"
-        >
-          <Text
-            accessibilityRole="text"
-            style={
-              {
-                "color": "white",
-                "fontFamily": "EuclidCircularB-Regular",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "letterSpacing": 0,
-                "lineHeight": 22,
-                "textAlign": "center",
-              }
-            }
-          >
-            Increment Redux Counter
-          </Text>
-        </TouchableOpacity>
-      </View>
-    </View>
+      </TouchableOpacity>
+    </TouchableOpacity>
     <RCTSafeAreaView
       style={
         {
@@ -202,21 +234,14 @@ exports[`SampleFeature render matches snapshot 1`] = `
           ]
         }
       >
-        <View
+        <TouchableOpacity
           style={
             {
-              "backgroundColor": "white",
-              "borderRadius": 8,
-              "elevation": 5,
-              "maxWidth": 500,
+              "backgroundColor": "#ffffff",
+              "borderColor": "#b7bbc8",
+              "borderRadius": 4,
+              "borderWidth": 1,
               "padding": 16,
-              "shadowColor": "#000",
-              "shadowOffset": {
-                "height": 2,
-                "width": 0,
-              },
-              "shadowOpacity": 0.25,
-              "shadowRadius": 3.84,
               "width": "100%",
             }
           }
@@ -412,6 +437,7 @@ exports[`SampleFeature render matches snapshot 1`] = `
                   "height": 40,
                   "justifyContent": "center",
                   "paddingHorizontal": 16,
+                  "width": "100%",
                 }
               }
               testID="add-pet-name-button"
@@ -433,7 +459,7 @@ exports[`SampleFeature render matches snapshot 1`] = `
               </Text>
             </TouchableOpacity>
           </View>
-        </View>
+        </TouchableOpacity>
       </View>
     </RCTSafeAreaView>
   </View>

@@ -4,7 +4,7 @@ import Label from '../../../../component-library/components/Form/Label';
 import TextField from '../../../../component-library/components/Form/TextField';
 import Button, {ButtonVariants} from '../../../../component-library/components/Buttons/Button';
 import {useStyles} from '../../../../component-library/hooks';
-import styleSheet from './SamplePetNames.styles';
+import styleSheet from './SamplePetNamesForm.styles';
 import {strings} from '../../../../../locales/i18n';
 import {SamplePetNamesFormContentProps} from './SamplePetNamesForm.types';
 import {useSamplePetNamesForm} from '../../../hooks/SampleFeature/useSamplePetNamesForm';
@@ -52,6 +52,7 @@ export function SamplePetNamesForm({chainId, initialAddress, initialName}: Sampl
 
             <Button
                 variant={ButtonVariants.Primary}
+                style={styles.button}
                 onPress={() => onSubmit()}
                 disabled={!isValid}
                 testID="add-pet-name-button"

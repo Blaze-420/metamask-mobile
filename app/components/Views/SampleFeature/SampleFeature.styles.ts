@@ -1,20 +1,26 @@
 import { StyleSheet } from 'react-native';
-import { Colors } from '../../../util/theme/models';
+import { Theme } from '../../../util/theme/models';
 
-const createStyles = (colors: Colors) =>
-  StyleSheet.create({
-    wrapper: {
-      backgroundColor: colors.background.default,
-      flex: 1,
-      padding: 24,
-      paddingBottom: 48,
-    },
-    heading: {
-      marginTop: 16,
-    },
-    desc: {
-      marginTop: 8,
-    },
-  });
+// TODO - implement proper styles for the SampleCounterPane component following our guidelines
+const styleSheet = (params: {
+    theme: Theme;
+}) => {
+    const { theme } = params;
+    const { colors } = theme;
+    return StyleSheet.create({
+        wrapper: {
+            backgroundColor: colors.background.default,
+            flex: 1,
+            padding: 24,
+            paddingBottom: 48,
+        },
+        heading: {
+            marginTop: 16,
+        },
+        desc: {
+            marginTop: 8,
+        },
+    });
+};
 
-export default createStyles;
+export default styleSheet;

@@ -1,9 +1,11 @@
 import React from 'react';
-import { View, TouchableOpacity } from 'react-native';
-import Text, { TextVariant } from '../../../../component-library/components/Texts/Text';
-import styles from './SampleCounterPane.styles';
+import Text, {TextVariant} from '../../../../component-library/components/Texts/Text';
+import Button, {ButtonVariants} from '../../../../component-library/components/Buttons/Button';
+import styleSheet from './SampleCounterPane.styles';
 import useSampleCounter from '../../../hooks/SampleFeature/useSampleCounter/useSampleCounter';
 import {strings} from '../../../../../locales/i18n';
+import Card from '../../../../component-library/components/Cards/Card';
+import {useStyles} from '../../../../component-library/hooks';
 
 /**
  * Sample SampleCounterPane component
@@ -12,32 +14,31 @@ import {strings} from '../../../../../locales/i18n';
  */
 export function SampleCounterPane() {
 
+    const {styles} = useStyles(styleSheet, {});
+
     const counter = useSampleCounter();
 
     return (
-        <View style={styles.card}>
-            <View style={styles.container}>
-                <Text
-                    variant={TextVariant.HeadingSM}
-                    testID="sample-counter-pane-title"
-                >
-                    {strings('sample_feature.counter.title')}
-                </Text>
-                <Text testID="sample-counter-pane-value">
-                    {strings('sample_feature.counter.value',{value : counter.value})}
-                </Text>
-                <TouchableOpacity
-                    style={styles.button}
-                    onPress={() => {
-                        counter.increment();
-                    }}
-                    testID="sample-counter-pane-increment-button"
-                >
-                    <Text style={styles.buttonText}>
-                        {strings('sample_feature.counter.increment')}
-                    </Text>
-                </TouchableOpacity>
-            </View>
-        </View>
+        <Card style={styles.card}>
+            <Text
+                variant={TextVariant.HeadingSM}
+                testID="sample-counter-pane-title"
+            >
+                {strings('sample_feature.counter.title')}
+            </Text>
+            <Text testID="sample-counter-pane-value">
+                {strings('sample_feature.counter.value', {value: counter.value})}
+            </Text>
+
+            <Button
+                variant={ButtonVariants.Primary}
+                style={styles.button}
+                onPress={() => {
+                    counter.increment();
+                }}
+                testID="sample-counter-pane-increment-button"
+                label={strings('sample_feature.counter.increment')}
+            />
+        </Card>
     );
 }

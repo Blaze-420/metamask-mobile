@@ -1,27 +1,13 @@
 import { StyleSheet } from 'react-native';
 import {Theme} from '../../../../util/theme/models';
 
+// TODO - implement proper styles for the SampleCounterPane component following our guidelines
 const styleSheet = (params: {
     theme: Theme;
 }) => {
     const { theme } = params;
     const { colors } = theme;
     return StyleSheet.create({
-        card: {
-            maxWidth: 500,
-            width: '100%',
-            backgroundColor: 'white',
-            borderRadius: 8,
-            padding: 16,
-            shadowColor: '#000',
-            shadowOffset: {
-                width: 0,
-                height: 2,
-            },
-            shadowOpacity: 0.25,
-            shadowRadius: 3.84,
-            elevation: 5,
-        },
         wrapper: {
             backgroundColor: colors.background.default,
             flex: 1,
@@ -51,7 +37,9 @@ const styleSheet = (params: {
         textStack: {
             marginLeft: 12,
             flex: 1,
-        },
+        }, card: {
+            width: '100%',
+        }
     });
 };
 

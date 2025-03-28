@@ -9,6 +9,7 @@ exports[`SampleNetworkDisplay render matches snapshot 1`] = `
       "gap": 8,
       "justifyContent": "center",
       "padding": 16,
+      "width": "100%",
     }
   }
 >

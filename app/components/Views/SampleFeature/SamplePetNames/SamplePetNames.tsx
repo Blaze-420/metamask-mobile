@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import {KeyboardAvoidingView, Platform, SafeAreaView, View} from 'react-native';
+import {KeyboardAvoidingView, Platform, SafeAreaView} from 'react-native';
 import Text, {TextVariant} from '../../../../component-library/components/Texts/Text';
+import Card from '../../../../component-library/components/Cards/Card';
 import {useStyles} from '../../../../component-library/hooks';
 import styleSheet from './SamplePetNames.styles';
 import {strings} from '../../../../../locales/i18n';
@@ -32,11 +33,11 @@ export function SamplePetNames() {
                 style={styles.keyboardAvoidingView}
                 behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
             >
-                <View style={styles.card}>
+                <Card style={styles.card}>
                     <Text variant={TextVariant.HeadingSM}>{strings('sample_feature.pet_name.list_count_text')}</Text>
                     <SamplePetNamesList chainId={chainId} onAccountPress={onAccountPress}/>
                     <SamplePetNamesForm chainId={chainId} initialAddress={selectedAddress} initialName={selectedName}/>
-                </View>
+                </Card>
             </KeyboardAvoidingView>
         </SafeAreaView>
     );
