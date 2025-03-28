@@ -90,7 +90,7 @@ import AccountPermissions from '../../../components/Views/AccountPermissions';
 import { AccountPermissionsScreens } from '../../../components/Views/AccountPermissions/AccountPermissions.types';
 import { StakeModalStack, StakeScreenStack } from '../../UI/Stake/routes';
 import { BridgeModalStack, BridgeScreenStack } from '../../UI/Bridge/routes';
-import SampleFeature from '../../Views/SampleFeature/SampleFeature';
+import SampleFeature from '../../../SampleFeature/components/views/SampleFeature';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();

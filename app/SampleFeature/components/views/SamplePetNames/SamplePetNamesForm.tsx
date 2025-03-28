@@ -7,7 +7,7 @@ import {useStyles} from '../../../../component-library/hooks';
 import styleSheet from './SamplePetNamesForm.styles';
 import {strings} from '../../../../../locales/i18n';
 import {SamplePetNamesFormContentProps} from './SamplePetNamesForm.types';
-import {useSamplePetNamesForm} from '../../../hooks/SampleFeature/useSamplePetNamesForm';
+import {useSamplePetNamesForm} from '../../hooks/useSamplePetNamesForm';
 
 /**
  * Sample PetNamesForm component

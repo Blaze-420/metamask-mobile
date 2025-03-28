@@ -2,7 +2,7 @@ import React from 'react';
 import Text, {TextVariant} from '../../../../component-library/components/Texts/Text';
 import Button, {ButtonVariants} from '../../../../component-library/components/Buttons/Button';
 import styleSheet from './SampleCounterPane.styles';
-import useSampleCounter from '../../../hooks/SampleFeature/useSampleCounter/useSampleCounter';
+import useSampleCounter from '../../hooks/useSampleCounter/useSampleCounter';
 import {strings} from '../../../../../locales/i18n';
 import Card from '../../../../component-library/components/Cards/Card';
 import {useStyles} from '../../../../component-library/hooks';

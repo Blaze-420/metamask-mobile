@@ -9,7 +9,7 @@ jest.mock('react-native/Libraries/Linking/Linking', () => ({
 
 const mockIncrement = jest.fn();
 
-jest.mock('../../../hooks/SampleFeature/useSampleCounter/useSampleCounter', () => ({
+jest.mock('../../hooks/useSampleCounter/useSampleCounter', () => ({
         __esModule: true,
         default: () => ({
                 value: 42,

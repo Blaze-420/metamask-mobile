@@ -7,7 +7,7 @@ import styleSheet from './SamplePetNames.styles';
 import {strings} from '../../../../../locales/i18n';
 import {SamplePetNamesList} from './SamplePetNamesList';
 import {SamplePetNamesForm} from './SamplePetNamesForm';
-import useSampleNetwork from '../../../hooks/SampleFeature/useSampleNetwork/useSampleNetwork';
+import useSampleNetwork from '../../hooks/useSampleNetwork/useSampleNetwork';
 
 /**
  * Sample PetNames component

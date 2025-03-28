@@ -5,7 +5,7 @@ import Text, {TextColor, TextVariant} from '../../../component-library/component
 import {SampleCounterPane} from './SampleCounterPane/SampleCounterPane';
 import {SampleNetworkDisplay} from './SampleNetworkDisplay/SampleNetworkDisplay';
 import {SamplePetNames} from './SamplePetNames/SamplePetNames';
-import useSampleNetwork from '../../hooks/SampleFeature/useSampleNetwork/useSampleNetwork';
+import useSampleNetwork from '../hooks/useSampleNetwork/useSampleNetwork';
 import {useStyles} from '../../../component-library/hooks';
 import styleSheet from './SampleFeature.styles';
 import {baseStyles} from '../../../styles/common';
