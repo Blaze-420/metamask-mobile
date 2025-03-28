@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {View} from 'react-native';
 import Label from '../../../../component-library/components/Form/Label';
 import TextField from '../../../../component-library/components/Form/TextField';
@@ -6,10 +6,8 @@ import Button, {ButtonVariants} from '../../../../component-library/components/B
 import {useStyles} from '../../../../component-library/hooks';
 import styleSheet from './SamplePetNames.styles';
 import {strings} from '../../../../../locales/i18n';
-import {toChecksumAddress} from 'ethereumjs-util';
-import Engine from '../../../../core/Engine';
-import {Hex} from '@metamask/utils';
 import {SamplePetNamesFormContentProps} from './SamplePetNamesForm.types';
+import {useSamplePetNamesForm} from '../../../hooks/SampleFeature/useSamplePetNamesForm';
 
 /**
  * Sample PetNamesForm component
@@ -18,24 +16,16 @@ import {SamplePetNamesFormContentProps} from './SamplePetNamesForm.types';
  */
 export function SamplePetNamesForm({chainId, initialAddress, initialName}: SamplePetNamesFormContentProps) {
 
-    const [address, setAddress] = useState(initialAddress);
-    const [name, setName] = useState(initialName);
     const {styles} = useStyles(styleSheet, {});
 
-    useEffect(() => {
-        setAddress(initialAddress);
-        setName(initialName);
-    }, [initialAddress, initialName]);
-
-    const savePetName = () => {
-        const {AddressBookController} = Engine.context;
-        if (!name || !address) return;
-        AddressBookController.set(
-            toChecksumAddress(address),
-            name,
-            chainId as Hex,
-        );
-    };
+    const {
+        onSubmit,
+        isValid,
+        name,
+        setName,
+        setAddress,
+        address
+    } = useSamplePetNamesForm(chainId, initialAddress, initialName);
 
     return (
         <View style={styles.formContainer}>
@@ -62,8 +52,8 @@ export function SamplePetNamesForm({chainId, initialAddress, initialName}: Sampl
 
             <Button
                 variant={ButtonVariants.Primary}
-                onPress={savePetName}
-                disabled={!address || !name}
+                onPress={() => onSubmit()}
+                disabled={!isValid}
                 testID="add-pet-name-button"
                 label={strings('sample_feature.pet_name.add_pet_name_button')}
             />

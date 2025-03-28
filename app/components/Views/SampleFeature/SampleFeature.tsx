@@ -7,10 +7,8 @@ import createStyles from './SampleFeature.styles';
 import Text, {TextColor, TextVariant} from '../../../component-library/components/Texts/Text';
 import {SampleCounterPane} from './SampleCounterPane/SampleCounterPane';
 import {SampleNetworkDisplay} from './SampleNetworkDisplay/SampleNetworkDisplay';
-import {useSelector} from 'react-redux';
-import {selectNetworkImageSource, selectNetworkName} from '../../../selectors/networkInfos';
-import {selectChainId, selectNetworkConfigurations} from '../../../selectors/networkController';
 import {SamplePetNames} from './SamplePetNames/SamplePetNames';
+import useSampleNetwork from '../../hooks/SampleFeature/useSampleNetwork/useSampleNetwork';
 
 /**
  * Main view for app Sample Feature
@@ -23,11 +21,7 @@ const SampleFeature = () => {
     const {colors} = theme;
     const styles = createStyles(colors);
 
-    const networkImageSource = useSelector(selectNetworkImageSource);
-    const chainId = useSelector(selectChainId);
-    const networkConfigurations = useSelector(selectNetworkConfigurations);
-    const name = useSelector(selectNetworkName);
-    const networkName = networkConfigurations?.[chainId]?.name ?? name;
+    const {networkName, networkImageSource} = useSampleNetwork();
 
     return (
         <ScrollView style={styles.wrapper}>
@@ -50,7 +44,7 @@ const SampleFeature = () => {
                 imageSource={networkImageSource}
             />
             <SampleCounterPane/>
-            <SamplePetNames chainId={chainId}/>
+            <SamplePetNames/>
         </ScrollView>
     );
 };

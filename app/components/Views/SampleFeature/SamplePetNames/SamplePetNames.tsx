@@ -6,25 +6,16 @@ import styleSheet from './SamplePetNames.styles';
 import {strings} from '../../../../../locales/i18n';
 import {SamplePetNamesList} from './SamplePetNamesList';
 import {SamplePetNamesForm} from './SamplePetNamesForm';
-import {Hex} from '@metamask/utils';
-import {SupportedCaipChainId} from '@metamask/multichain-network-controller';
-
-/**
- * Sample interface for PetNames component props
- *
- * @sampleFeature do not use in production code
- */
-interface SamplePetNamesFormProps {
-    chainId: SupportedCaipChainId | Hex;
-}
+import useSampleNetwork from '../../../hooks/SampleFeature/useSampleNetwork/useSampleNetwork';
 
 /**
  * Sample PetNames component
  *
  * @sampleFeature do not use in production code
  */
-export function SamplePetNames({chainId}: SamplePetNamesFormProps) {
+export function SamplePetNames() {
     const {styles} = useStyles(styleSheet, {});
+    const {chainId} = useSampleNetwork();
 
     // TODO - maybe use a reducer here instead of useState
     const [selectedAddress, setSelectedAddress] = useState('');
