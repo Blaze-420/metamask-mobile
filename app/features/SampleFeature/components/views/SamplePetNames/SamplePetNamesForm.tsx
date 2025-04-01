@@ -14,7 +14,11 @@ import {useSamplePetNamesForm} from '../../hooks/useSamplePetNamesForm';
  *
  * @sampleFeature do not use in production code
  */
-export function SamplePetNamesForm({chainId, initialAddress, initialName}: SamplePetNamesFormContentProps) {
+export function SamplePetNamesForm({
+    chainId,
+    initialAddress,
+    initialName
+}: SamplePetNamesFormContentProps) {
 
     const {styles} = useStyles(styleSheet, {});
 
@@ -61,4 +65,3 @@ export function SamplePetNamesForm({chainId, initialAddress, initialName}: Sampl
         </View>
     );
 }
-
