@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { Theme } from '../../../util/theme/models';
+import { Theme } from '../../../../util/theme/models';
 
 // TODO - implement proper styles for the SampleCounterPane component following our guidelines
 const styleSheet = (params: {

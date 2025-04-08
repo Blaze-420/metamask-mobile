@@ -1,9 +1,9 @@
 import React from 'react';
-import renderWithProvider from '../../../../util/test/renderWithProvider';
-import initialRootState from '../../../../util/test/initial-root-state';
+import renderWithProvider from '../../../../../util/test/renderWithProvider';
+import initialRootState from '../../../../../util/test/initial-root-state';
 import {waitFor, fireEvent} from '@testing-library/react-native';
 import {SamplePetNamesForm} from './SamplePetNamesForm';
-import Engine from '../../../../core/Engine';
+import Engine from '../../../../../core/Engine';
 
 jest.mock('react-native/Libraries/Linking/Linking', () => ({
     addEventListener: jest.fn(() => ({remove: jest.fn()})),

@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from 'react';
 import { toChecksumAddress } from 'ethereumjs-util';
-import Engine from '../../../../core/Engine';
+import Engine from '../../../../../core/Engine';
 import { Hex } from '@metamask/utils';
 import { SupportedCaipChainId } from '@metamask/multichain-network-controller';
 import {UseSamplePetNamesFormReturn} from './useSamplePetNamesForm.types';

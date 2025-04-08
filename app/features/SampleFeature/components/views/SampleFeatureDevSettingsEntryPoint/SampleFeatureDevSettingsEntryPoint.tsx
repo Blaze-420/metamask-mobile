@@ -1,20 +1,20 @@
 import React from 'react';
-import { useTheme } from '../../../../util/theme';
+import { useTheme } from '../../../../../util/theme';
 import Text, {
   TextVariant,
   TextColor,
-} from '../../../../component-library/components/Texts/Text';
-import { useStyles } from '../../../../component-library/hooks';
-import {strings} from '../../../../../locales/i18n';
+} from '../../../../../component-library/components/Texts/Text';
+import { useStyles } from '../../../../../component-library/hooks';
+import {strings} from '../../../../../../locales/i18n';
 import Button, {
     ButtonSize,
     ButtonVariants,
     ButtonWidthTypes
-} from '../../../../component-library/components/Buttons/Button';
-import {MetaMetricsEvents} from '../../../../core/Analytics';
+} from '../../../../../component-library/components/Buttons/Button';
+import {MetaMetricsEvents} from '../../../../../core/Analytics';
 import {useNavigation} from '@react-navigation/native';
 import styleSheet from './SampleFeatureDevSettingsEntryPoint.styles';
-import {useMetrics} from '../../../../components/hooks/useMetrics';
+import {useMetrics} from '../../../../../components/hooks/useMetrics';
 
 function NavigateToSampleFeature() {
     const theme = useTheme();

@@ -1,6 +1,6 @@
 import {useSelector} from 'react-redux';
-import {selectNetworkImageSource, selectNetworkName} from '../../../../selectors/networkInfos';
-import {selectChainId, selectNetworkConfigurations} from '../../../../selectors/networkController';
+import {selectNetworkImageSource, selectNetworkName} from '../../../../../selectors/networkInfos';
+import {selectChainId, selectNetworkConfigurations} from '../../../../../selectors/networkController';
 
 /**
  * Sample useSampleCounter hook

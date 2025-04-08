@@ -1,7 +1,7 @@
 import React from 'react';
 import {ImageSourcePropType, Text, View} from 'react-native';
-import AvatarNetwork from '../../../../component-library/components/Avatars/Avatar/variants/AvatarNetwork';
-import {useStyles} from '../../../../component-library/hooks';
+import AvatarNetwork from '../../../../../component-library/components/Avatars/Avatar/variants/AvatarNetwork';
+import {useStyles} from '../../../../../component-library/hooks';
 import styleSheet from './SampleNetworkDisplay.styles';
 
 /**

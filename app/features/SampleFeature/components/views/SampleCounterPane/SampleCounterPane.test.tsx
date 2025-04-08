@@ -1,6 +1,6 @@
 import React from 'react';
 import { fireEvent, waitFor } from '@testing-library/react-native';
-import renderWithProvider from '../../../../util/test/renderWithProvider';
+import renderWithProvider from '../../../../../util/test/renderWithProvider';
 import { SampleCounterPane } from './SampleCounterPane';
 
 jest.mock('react-native/Libraries/Linking/Linking', () => ({

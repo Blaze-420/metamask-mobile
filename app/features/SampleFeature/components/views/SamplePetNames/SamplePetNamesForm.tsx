@@ -1,11 +1,11 @@
 import React from 'react';
 import {View} from 'react-native';
-import Label from '../../../../component-library/components/Form/Label';
-import TextField from '../../../../component-library/components/Form/TextField';
-import Button, {ButtonVariants} from '../../../../component-library/components/Buttons/Button';
-import {useStyles} from '../../../../component-library/hooks';
+import Label from '../../../../../component-library/components/Form/Label';
+import TextField from '../../../../../component-library/components/Form/TextField';
+import Button, {ButtonVariants} from '../../../../../component-library/components/Buttons/Button';
+import {useStyles} from '../../../../../component-library/hooks';
 import styleSheet from './SamplePetNamesForm.styles';
-import {strings} from '../../../../../locales/i18n';
+import {strings} from '../../../../../../locales/i18n';
 import {SamplePetNamesFormContentProps} from './SamplePetNamesForm.types';
 import {useSamplePetNamesForm} from '../../hooks/useSamplePetNamesForm';
 

@@ -1,14 +1,14 @@
 import React from 'react';
 
-import {strings} from '../../../../locales/i18n';
-import Text, {TextColor, TextVariant} from '../../../component-library/components/Texts/Text';
+import {strings} from '../../../../../locales/i18n';
+import Text, {TextColor, TextVariant} from '../../../../component-library/components/Texts/Text';
 import {SampleCounterPane} from './SampleCounterPane/SampleCounterPane';
 import {SampleNetworkDisplay} from './SampleNetworkDisplay/SampleNetworkDisplay';
 import {SamplePetNames} from './SamplePetNames/SamplePetNames';
 import useSampleNetwork from '../hooks/useSampleNetwork/useSampleNetwork';
-import {useStyles} from '../../../component-library/hooks';
+import {useStyles} from '../../../../component-library/hooks';
 import styleSheet from './SampleFeature.styles';
-import {baseStyles} from '../../../styles/common';
+import {baseStyles} from '../../../../styles/common';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 
 /**

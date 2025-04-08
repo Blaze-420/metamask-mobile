@@ -1,8 +1,8 @@
 import React from 'react';
 import {waitFor} from '@testing-library/react-native';
 import {SamplePetNamesList} from './SamplePetNamesList';
-import renderWithProvider from '../../../../util/test/renderWithProvider';
-import initialRootState from '../../../../util/test/initial-root-state';
+import renderWithProvider from '../../../../../util/test/renderWithProvider';
+import initialRootState from '../../../../../util/test/initial-root-state';
 
 jest.mock('react-native/Libraries/Linking/Linking', () => ({
     addEventListener: jest.fn(() => ({

@@ -8,6 +8,7 @@ import {useState} from 'react';
 function useSampleCounter(initial = 0) {
 
     // TODO - implement the redux counter logic here instead of useState
+    // use react toolkit see engine reducer /app/core/redux/slices/inpageProvider/index.ts
     const [count, setCount] = useState(initial);
     const increment = () => setCount(prev => prev + 1);
 

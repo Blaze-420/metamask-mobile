@@ -1,7 +1,7 @@
 import React from 'react';
-import renderWithProvider from '../../../util/test/renderWithProvider';
+import renderWithProvider from '../../../../util/test/renderWithProvider';
 import SampleFeature from './SampleFeature';
-import initialRootState from '../../../util/test/initial-root-state';
+import initialRootState from '../../../../util/test/initial-root-state';
 
 jest.mock('react-native/Libraries/Linking/Linking', () => ({
     addEventListener: jest.fn(() => ({

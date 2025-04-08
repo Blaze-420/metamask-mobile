@@ -1,14 +1,14 @@
 import React from 'react';
 import { View, TouchableOpacity } from 'react-native';
-import Text, { TextVariant } from '../../../../component-library/components/Texts/Text';
-import ListItem from '../../../../component-library/components/List/ListItem';
-import Avatar, { AvatarSize, AvatarVariant } from '../../../../component-library/components/Avatars/Avatar';
-import { renderShortAddress } from '../../../../util/address';
-import { useStyles } from '../../../../component-library/hooks';
+import Text, { TextVariant } from '../../../../../component-library/components/Texts/Text';
+import ListItem from '../../../../../component-library/components/List/ListItem';
+import Avatar, { AvatarSize, AvatarVariant } from '../../../../../component-library/components/Avatars/Avatar';
+import { renderShortAddress } from '../../../../../util/address';
+import { useStyles } from '../../../../../component-library/hooks';
 import styleSheet from './SamplePetNamesList.styles';
 import {useSelector} from 'react-redux';
-import {RootState} from '../../../../reducers';
-import {selectAddressBookByChain} from '../../../../selectors/addressBookController';
+import {RootState} from '../../../../../reducers';
+import {selectAddressBookByChain} from '../../../../../selectors/addressBookController';
 import {Hex} from '@metamask/utils';
 import {SamplePetNamesListProps} from './SamplePetNamesList.types';
 

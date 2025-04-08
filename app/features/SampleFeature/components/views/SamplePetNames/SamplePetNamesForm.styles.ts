@@ -1,8 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 // TODO - implement proper styles for the SampleCounterPane component following our guidelines
-const styleSheet = () => {
-    return StyleSheet.create({
+const styleSheet = () => StyleSheet.create({
         formContainer: {
             marginTop: 24,
             paddingBottom: 24,
@@ -17,6 +16,5 @@ const styleSheet = () => {
             width: '100%',
         }
     });
-};
 
 export default styleSheet;

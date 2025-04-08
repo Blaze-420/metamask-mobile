@@ -83,14 +83,14 @@ import DeprecatedNetworkDetails from '../../UI/DeprecatedNetworkModal';
 import ConfirmAddAsset from '../../UI/ConfirmAddAsset';
 import { AesCryptoTestForm } from '../../Views/AesCryptoTestForm';
 import { isTest } from '../../../util/test/utils';
-import { selectPermissionControllerState } from '../../../selectors/snaps/permissionController';
+import { selectPermissionControllerState } from '../../../selectors/snaps';
 import NftDetails from '../../Views/NftDetails';
 import NftDetailsFullImage from '../../Views/NftDetails/NFtDetailsFullImage';
 import AccountPermissions from '../../../components/Views/AccountPermissions';
-import { AccountPermissionsScreens } from '../../../components/Views/AccountPermissions/AccountPermissions.types';
+import { AccountPermissionsScreens } from '../../Views/AccountPermissions/AccountPermissions.types';
 import { StakeModalStack, StakeScreenStack } from '../../UI/Stake/routes';
 import { BridgeModalStack, BridgeScreenStack } from '../../UI/Bridge/routes';
-import SampleFeature from '../../../SampleFeature/components/views/SampleFeature';
+import SampleFeature from '../../../features/SampleFeature/components/views/SampleFeature';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();

@@ -10,7 +10,7 @@ import { useStyles } from '../../../../component-library/hooks';
 import styleSheet from './DeveloperOptions.styles';
 import SentryTest from './SentryTest';
 import SampleFeatureDevSettingsEntryPoint
-    from '../../../../SampleFeature/components/views/SampleFeatureDevSettingsEntryPoint/SampleFeatureDevSettingsEntryPoint';
+    from '../../../../features/SampleFeature/components/views/SampleFeatureDevSettingsEntryPoint/SampleFeatureDevSettingsEntryPoint';
 
 const DeveloperOptions = () => {
   const navigation = useNavigation();

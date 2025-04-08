@@ -1,6 +1,8 @@
 import {act, renderHook} from '@testing-library/react-hooks';
 import useSampleCounter from './useSampleCounter';
 
+// TODO Mock storage
+
 describe('useSampleCounter', () => {
     it('initializes with default value of 0', () => {
         const {result} = renderHook(() => useSampleCounter());
