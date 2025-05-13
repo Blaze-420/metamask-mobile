@@ -88,6 +88,7 @@ export const useConfirmationRedesignEnabled = () => {
   const { approvalRequest } = useApprovalRequest();
   const fromAddress = approvalRequest?.requestData?.from;
   const transactionMetadata = useTransactionMetadataRequest();
+  console.log('transactionMetadata = ', transactionMetadata);
   const confirmationRedesignFlags = useSelector(
     selectConfirmationRedesignFlags,
   );
